@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Navbar from './Navbar';
 import Video from "./video";
+import index from "./index.css"
 export default function Home() {
   return (
     <>
