@@ -1,21 +1,32 @@
 import React from 'react'
-import Landpage from './components/Landpage'
+
+import Videofooter from './components/VideoFooter'
+// import { Routes, Route } from "react-router-dom";
+import { useState } from 'react'
+import Home from './components/Home'
 import Login from './components/Login'
 import Signup from './components/Signup'
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import Landpage from './components/Landpage'
 
 
-export default function App() {
+function App() {
+  const [count, setCount] = useState(0)
   return (
-    <div style={{ height: "100vh", backgroundImage: 'url("https://unbounce.com/photos/Gradient-Background.png")', backgroundRepeat: "no-repeat", width: "100vw", backgroundSize: "cover", }}>
+
+    <div >
       {/* <Home /> */}
       <Routes>
-
+        <Route path='/home' element={<Home/>}/>
         <Route exact path='/' element={<Landpage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
     
       </Routes> 
+
     </div>
   )
 }
+export default App
+
