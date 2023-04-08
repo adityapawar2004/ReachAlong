@@ -17,8 +17,8 @@ function Video({url}) {
     };
   return (
     <div className='video'>
-      <video onClick={handelVideoPress} className='video_player' ref={videoRef} loopz src={url}></video>
-      <VideoFooter chanel={sas} desc={hjkhbkbk} song={bjbkb} />
+      <video onClick={handelVideoPress} className='video_player' ref={videoRef}  src={'https://www.youtube.com/watch?v=qQiqjAwc-14'}></video>
+      <VideoFooter chanel={'sas'} desc={'hjkhbkbk'} song={'bjbkb'} />
       <VideoSidebar likes={12} share={234} msg={234} />
     </div>
   )

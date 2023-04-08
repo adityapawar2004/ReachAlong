@@ -4,11 +4,12 @@ import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Navbar from './Navbar';
-
+import Video from "./video";
 export default function Home() {
   return (
     <>
       <Navbar />
+      <Video/>
       <Grid
         style={{
           display: "flex",
