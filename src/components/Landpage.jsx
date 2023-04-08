@@ -62,7 +62,19 @@ export default function Landpage() {
             >
               Log in
             </Link>
+           
           </Button>
+          <Button variant="outlined"> <Link
+              to="/profile"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                background:
+                  " linear-gradient(to right, #33ccff 0%, #ff99cc 37%)",
+              }}
+            >
+              Profile
+            </Link></Button>
         </Grid>
       </Grid>
     </>
