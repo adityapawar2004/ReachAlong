@@ -3,6 +3,7 @@ import VideoFooter from './VideoFooter'
 import VideoSidebar from './VideoSidebar';
 import './Video.css'
 function Video({url}) {
+ 
     const [playing,setplaying]=useState(false);
     const  videoRef=useRef(null);
     const handelVideoPress=()=>{
